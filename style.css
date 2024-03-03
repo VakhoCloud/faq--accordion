@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-pink: hsl(275, 100%, 97%);
+    --color-grayish-purple: hsl(292, 16%, 49%);
+    --color-dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+    background: url('./assets/images/background-pattern-desktop.svg') repeat-x;
+    background-color: #EBBEFF;
+}
+
+
+header {
+    display: flex;
+    gap: 2rem;
+}
+
+header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.container { 
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+
+}
+
+.card {
+    background-color: var(--color-white);
+    width: 327px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+p {
+    font-weight: 600;
+    color: #4B0B67;
+}
+
+button  {
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    border: 0;
+    color: #341635;
+}
+
+button:active { 
+    color: black;
+}
+
+button:hover { 
+    color: var(--color-dark-purple);
+}
+
+.bgphone {
+    display: block;
+    width: 100%;
+    height: 232px;
+}
+
+
+.hidden { 
+    display: none;
+}
+
+hr {
+    border: 1px solid #d3d3d3;
+}
+
+.question img {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1440px){
+    body { 
+        background: url('./assets/images/background-pattern-desktop.svg') repeat-x;
+        background-color: #EBBEFF;
+    }
+
+    .card { 
+        width: 926px;
+        padding: 2.5rem;
+    }
+
+    header {
+        margin-bottom: 12px;
+    }
+
+    header h2 { 
+        font-size: 3rem;
+    }
+    header img {
+        width: 66px;
+    }
+
+    p, button { 
+        font-size: 1.25 rem;
+    }
+
+    hr {
+        margin: 12px;
+    }
+}
